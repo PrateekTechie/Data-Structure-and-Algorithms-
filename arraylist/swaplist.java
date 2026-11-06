@@ -1,4 +1,7 @@
-import java.util.ArrayList;
+// import java.util.ArrayList;
+// import java.util.Collection;
+
+import java.util.*;
 
 public class swaplist {
     public static void swap(ArrayList<Integer> list, int idx1, int idx2) {
@@ -15,9 +18,13 @@ public class swaplist {
         list.add(4);
         list.add(3);
 
-        int idx1 = 1, idx2 = 3;
-        System.out.println("before swapping:" + list);
-        swap(list, idx1, idx2);
-        System.out.println("after swapping: " + list);
+        // int idx1 = 1, idx2 = 3;
+        // System.out.println("before swapping:" + list);
+        // swap(list, idx1, idx2);
+        // System.out.println("after swapping: " + list);
+
+        System.out.println(list);
+        Collections.sort(list);
+        System.out.println(list);
     }
 }
